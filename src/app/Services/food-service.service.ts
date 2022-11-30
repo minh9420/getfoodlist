@@ -8,7 +8,16 @@ import { Injectable } from '@angular/core';
 export class FoodServiceService {
 // data!: Foods[]
   constructor() { }
-  getAllFood () {
-    return sample_food 
+  getAllFood (event?:any) {
+    if (!event) {
+      return sample_food 
+    } else {
+      let result =  sample_food.filter(e => {
+        // console.log
+        return e.name.toLowerCase().includes(event)
+      })
+      return result
+    }
+    // console.log('haha',e)
   }
 }

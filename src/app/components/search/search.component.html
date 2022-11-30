@@ -1,6 +1,6 @@
 <div class="app__search">
     <div class="app__search-container">
-        <input (keyup)="changeValue()" class="app__search-input" type="text" placeholder="Search">
+        <input #inta (keyup)="changeValue(inta.value)" class="app__search-input" type="text" placeholder="Search">
         <button class="app__search-btn">Search</button>
     </div>
 </div>

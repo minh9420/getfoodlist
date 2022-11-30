@@ -1,4 +1,5 @@
 <div class="app">
+    <app-search [foods] = "foods" (items)="abcxyz($event)"></app-search>
     <div class="app__food">
         <div *ngFor="let food of foods" class="app__food_content">
             <img class="app__food_img" src="{{food.imageUrl}}" alt="{{food.name}}">

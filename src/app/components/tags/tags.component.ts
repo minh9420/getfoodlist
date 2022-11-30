@@ -21,4 +21,7 @@ foods!:Foods[]
 getAllFoodWeb() {
   this.foods = this.foodServiceService.getAllFood()
 }
+abcxyz(event:any) {
+  this.foods= event
+}
 }
