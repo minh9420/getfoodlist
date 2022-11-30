@@ -1,0 +1,41 @@
+.app {
+    // display: flex;
+}
+.app__food {
+    // margin: 0 auto;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.app__food_content {
+    width: calc(100% / 6);
+    margin: 8px 8px;
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.app__food_img {
+    // width: 100%;
+    object-fit: cover;
+    height: 232px;
+}
+.app__food_info {
+    padding: 10px !important;
+}
+.favorite {
+    color: red;
+}
+.favorite.not {
+    color: black;
+}
+.item {
+    display: flex;
+}
+.item span {
+    background-color: rgba(83, 81, 81, 0.2);
+    padding: 0px 1px;
+    margin: 3px;
+    border-radius: 10px;
+    font-size: 14px;
+    color: rgb(99, 97, 97);
+}

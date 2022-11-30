@@ -1,0 +1,26 @@
+.header_container {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #f9ac67;
+    padding: 0.5rem 0;
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
+li {
+    list-style: none;
+    min-width: 5rem;
+    text-shadow: 0 0 1px #FF0000;
+}
+li a {
+    color: #f9ac67;
+    text-decoration: none;
+}
+li:hover {
+    cursor: pointer;
+}
+
+.header_container_child2 ul {
+    display: flex;
+}

@@ -1,0 +1,16 @@
+<div class="app">
+    <div class="app__food">
+        <div *ngFor="let food of foods" class="app__food_content">
+            <img class="app__food_img" src="{{food.imageUrl}}" alt="{{food.name}}">
+            <div class="app__food_info">
+                <div>{{food.name}}</div>
+                <div class="favorite {{food.favorite?'': 'not'}}"><i class="bi bi-emoji-heart-eyes-fill"></i></div>
+                <div>{{food.stars}}</div>
+                <div class="item">
+                    <span *ngFor="let item of food.origins">{{item}}</span>
+                </div>
+                <div>{{food.price | currency}}</div>
+            </div>
+        </div>
+    </div>
+</div>
